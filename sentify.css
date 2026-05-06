@@ -1,0 +1,97 @@
+@keyframes float-up {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-float {
+  animation: float-up 0.45s ease both;
+}
+@keyframes pop {
+  0% {
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animate-pop {
+  animation: pop 0.35s ease both;
+}
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+}
+.modal-backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+html,
+body {
+  transition: background 0.4s, color 0.4s;
+}
+
+/* Custom dark theme */
+
+body.dark, html.dark {
+  background-color: #111;
+  color: white;
+}
+
+body.dark {
+  background-color: black;
+  color: #000;
+}
+body.dark .logo {
+  color: #1f2937;
+}
+body.dark header {
+  background-color: #b41421;
+  color: #fff;
+}
+
+body.dark #about h2,
+body.dark #about p {
+  color: white;
+}
+
+body.dark nav a {
+  color: #fff;
+}
+body.dark .welcome {
+  color: white;
+}
+body.dark #kids > h2 {
+  color: white;
+}
+body.dark nav a:hover {
+  color: #e2e8f0;
+}
+body.dark footer {
+  background-color: #b41421;
+  color: #fff;
+}
+
+body.dark #men > h2 {
+  color: white;
+}
+
+body.dark #women > h2 {
+  color: white;
+}
+
+#theme-toggle {
+  border: none;
+  color: white;
+}
+
+#theme-toggle:hover {
+  border: none;
+}
